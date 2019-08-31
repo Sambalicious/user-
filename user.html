@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<h2>User Profile</h2>
+<div class="color-green">
+<div class="container">
+    
+        <label for="pictures_upload">Upload Your Image</label>
+        <input name="pictures[]" type="file" required><br>
+        <a href="#" class="btn btn-white btn-animated" 
+        onclick="notEmpty(document.getElementById('required'), 'Please Enter a Value')"> Upload Image</a>
+        
+</div><br><br>
+    
+    <div class="container">
+        
+        <form action="#">
+        
+           <span> <strong> Name: </strong></span>
+            <input type="text" placeholder="Enter Your Names Here" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Enter your Names Here'" required><br>
+           <span><strong> Phone Number:</strong></span> 
+            <input type="tel" placeholder="+234XXXXXXXXX" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Enter your phone number'" required><br>
+           <span><strong> Email:</strong></span> 
+            <input type="email" placeholder="Enter Your Email address" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Enter your Email adress'" required> <br>
+           <span><strong>Address:</strong></span> 
+            <input type="text" placeholder="Your Residential address" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Enter your Residential adress'" required><br>
+            <span><strong>Status:</strong></span>
+            <input type="radio" name="status" value="Corporate" checked > Corporate
+            <input type="radio" name="status" value="Individual"> Individual
+            <br>
+            <input type="submit" value="Submit" class="btn btn-white btn-animated" 
+            onclick="notEmpty(document.getElementById('required'), 'Please Enter a Value')" >Submit
+        </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
